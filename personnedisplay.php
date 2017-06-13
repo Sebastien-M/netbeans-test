@@ -10,6 +10,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        
         <?php
         include_once './Personne.php';
         $innom = htmlspecialchars($_POST['nom']);
@@ -19,5 +20,6 @@ and open the template in the editor.
         $personne1 = new Personne($innom, $inprenom, $inage, $inregion);
         echo $personne1;
         ?>
+        
     </body>
 </html>
